@@ -1,65 +1,83 @@
 import Link from "next/link";
 
+import type { Locale } from "@/i18n/config";
+import { siteCopy } from "@/i18n/copy";
+
+import { getLocalizedProject } from "../data/get-project";
 import type { PortfolioProject } from "../types/project";
+import { ProjectVisual } from "./project-visual";
 
 interface ProjectCardProps {
   project: PortfolioProject;
+  locale: Locale;
+  index: number;
 }
 
 export function ProjectCard({
   project,
+  locale,
+  index,
 }: ProjectCardProps) {
   const isAvailable = project.status === "published";
+  const content = getLocalizedProject(project, locale);
+  const copy = siteCopy[locale].projects;
+  const localeRoot = locale === "es" ? "/es" : "";
 
-  return (
-    <article className="group rounded-2xl border border-zinc-800 bg-zinc-950 p-6 transition hover:border-zinc-700">
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <p className="text-sm text-zinc-500">
-            {project.subtitle}
-          </p>
+  const cardContent = (
+    <>
+      <ProjectVisual project={project} />
 
-          <h3 className="mt-2 text-2xl font-semibold tracking-tight text-white">
-            {project.name}
-          </h3>
+      <div className="flex flex-1 flex-col p-6 sm:p-7">
+        <div className="flex items-center justify-between gap-4 font-mono text-[0.62rem] uppercase tracking-[0.14em] text-muted">
+          <span className="text-accent">{String(index).padStart(2, "0")}</span>
+          <span>{content.subtitle}</span>
         </div>
 
-        {project.privateSource && (
-          <span className="rounded-full border border-zinc-700 px-3 py-1 text-xs text-zinc-400">
-            Private source
+        <h3 className="mt-7 text-3xl font-semibold leading-tight tracking-[-0.04em] text-foreground">
+          {content.name}
+        </h3>
+        <p className="mt-4 text-sm leading-7 text-muted">
+          {content.description}
+        </p>
+
+        <ul className="mt-7 flex flex-wrap gap-x-4 gap-y-2 font-mono text-[0.62rem] uppercase tracking-[0.08em] text-foreground/70">
+          {project.technologies.slice(0, 4).map((technology) => (
+            <li key={technology} className="before:mr-1.5 before:text-accent before:content-['+']">
+              {technology}
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-auto flex items-end justify-between gap-4 pt-9">
+          <span className="font-mono text-[0.62rem] uppercase tracking-[0.12em] text-muted">
+            {project.privateSource ? copy.privateSource : copy.technologyLabel}
           </span>
-        )}
-      </div>
-
-      <p className="mt-4 leading-7 text-zinc-400">
-        {project.description}
-      </p>
-
-      <div className="mt-6 flex flex-wrap gap-2">
-        {project.technologies.map((technology) => (
-          <span
-            key={technology}
-            className="rounded-md bg-zinc-900 px-3 py-1 text-sm text-zinc-300"
-          >
-            {technology}
+          <span className="flex size-10 items-center justify-center border border-line text-lg text-foreground transition-all duration-300 group-hover:border-accent group-hover:bg-accent group-hover:text-background group-focus-visible:border-accent group-focus-visible:bg-accent group-focus-visible:text-background">
+            <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-0.5">
+              ↗
+            </span>
           </span>
-        ))}
+        </div>
       </div>
+    </>
+  );
 
-      <div className="mt-8">
-        {isAvailable ? (
+  return (
+    <article className="min-w-0">
+      {isAvailable ? (
           <Link
-            href={`/projects/${project.slug}`}
-            className="text-sm font-medium text-white"
+            href={`${localeRoot}/projects/${project.slug}`}
+            aria-label={`${copy.viewCaseStudy}: ${content.name}`}
+            className="group flex h-full flex-col overflow-hidden border border-line bg-surface transition-[border-color,background-color,transform,box-shadow] duration-300 hover:-translate-y-1 hover:border-foreground/30 hover:bg-surface-strong hover:shadow-[0_18px_50px_rgba(0,0,0,0.28)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
           >
-            View case study →
+            {cardContent}
           </Link>
         ) : (
-          <span className="text-sm text-zinc-600">
-            Case study coming soon
-          </span>
+          <div className="flex h-full flex-col overflow-hidden border border-line bg-surface opacity-70">
+            {cardContent}
+            <span className="sr-only">{copy.comingSoon}</span>
+          </div>
         )}
-      </div>
     </article>
   );
 }

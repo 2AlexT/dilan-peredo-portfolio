@@ -1,0 +1,254 @@
+import type { Locale } from "./config";
+
+export const siteCopy = {
+  en: {
+    navigation: {
+      projects: "Work",
+      about: "About",
+      skills: "Skills",
+      contact: "Contact",
+      switchLanguage: "Cambiar a español",
+      switchLanguageShort: "ES",
+    },
+    home: {
+      availability: "Available for select opportunities",
+      eyebrow: "Software Engineer · Full Stack",
+      headlineLead: "I engineer",
+      headlineAccent: "business software",
+      headlineEnd: "that holds up in the real world.",
+      introduction:
+        "I design and build full-stack systems where operational complexity, enterprise integrations, and thoughtful user experience meet.",
+      viewProjects: "Explore selected work",
+      github: "View GitHub profile",
+      location: "Based in Bolivia · Working across systems",
+      about: "About",
+      aboutHeadline: "Software should make complex work feel clear.",
+      aboutBody:
+        "I am a full-stack software engineer focused on the systems behind day-to-day business operations. My work spans backend services, frontend applications, data workflows, and integrations with platforms such as SAP.",
+      aboutSecondary:
+        "I care about understanding the domain before choosing the abstraction—building maintainable software that teams can operate, extend, and trust.",
+      principles: [
+        "Model the domain, not just the screens",
+        "Make tradeoffs explicit",
+        "Design for the people operating the system",
+      ],
+      selectedWork: "Selected work",
+      engineeringProjects: "Case studies in applied software engineering.",
+      workIntroduction:
+        "A selection of enterprise platforms and automation products, framed around the problem, architecture, and engineering decisions behind them.",
+      allProjects: "View all projects",
+      skills: "Skills & technologies",
+      skillsHeadline: "A practical stack for end-to-end delivery.",
+      skillsIntroduction:
+        "Tools are selected for the problem at hand. These are the technologies I use most often to move from business rules to reliable production software.",
+      skillGroups: [
+        {
+          title: "Backend & APIs",
+          items: [".NET", "Node.js", "Express", "REST APIs", "Authentication"],
+        },
+        {
+          title: "Frontend",
+          items: ["TypeScript", "Angular", "React", "Next.js", "Accessible UI"],
+        },
+        {
+          title: "Data & enterprise",
+          items: ["SQL Server", "MongoDB", "SAP HANA", "SAP Business One", "Reporting"],
+        },
+        {
+          title: "Engineering practice",
+          items: ["System design", "Domain modeling", "Git", "Testing", "API contracts"],
+        },
+      ],
+      experience: "Engineering approach",
+      experienceHeadline: "From operational problem to maintainable system.",
+      experienceIntroduction:
+        "My experience is rooted in shipping software inside real business environments, where reliability, change, and integration boundaries matter as much as the interface.",
+      experienceSteps: [
+        {
+          number: "01",
+          title: "Understand the operation",
+          body: "Map users, workflows, constraints, and the business rules that the software must protect.",
+        },
+        {
+          number: "02",
+          title: "Shape the system",
+          body: "Define boundaries, contracts, and data flows that keep frontend, backend, and integrations understandable.",
+        },
+        {
+          number: "03",
+          title: "Deliver and evolve",
+          body: "Ship useful increments, observe how they perform in practice, and improve the design as the domain becomes clearer.",
+        },
+      ],
+      contact: "Contact",
+      contactHeadline: "Have a system that needs clarity?",
+      contactBody:
+        "I am interested in software engineering work involving meaningful product problems, complex workflows, and teams that value thoughtful execution.",
+      contactCta: "Start a conversation on GitHub",
+    },
+    projects: {
+      eyebrow: "Selected work",
+      title: "Engineering case studies",
+      introduction:
+        "Products are more than screenshots. These case studies focus on the operational context, system design, and decisions behind the interface.",
+      privateSource: "Private system",
+      viewCaseStudy: "Read case study",
+      comingSoon: "Case study in progress",
+      technologyLabel: "Core stack",
+    },
+    caseStudy: {
+      eyebrow: "Engineering case study",
+      stack: "Technology stack",
+      introduction: "Introduction",
+      context: "Context & response",
+      problem: "Problem",
+      solution: "Solution",
+      role: "Role & ownership",
+      architecture: "System architecture",
+      highlights: "Engineering highlights",
+      challenges: "Challenges & decisions",
+      screenshots: "Product views",
+      improvements: "Lessons & next improvements",
+      repository: "View repository",
+      live: "Visit live product",
+      demo: "Open interactive demo",
+      privateNotice: "Source code is private; this case study excludes confidential implementation and customer data.",
+      backToProjects: "Back to all work",
+      nextProject: "Next case study",
+      requestFlow: "Request flow",
+      systemBoundary: "System boundary",
+      interface: "Interface",
+      serviceLayer: "Service layer",
+      dataSystems: "Data / systems",
+    },
+    footer: {
+      description: "Full-stack software engineer building dependable business systems and enterprise integrations.",
+      rights: "All rights reserved.",
+    },
+  },
+  es: {
+    navigation: {
+      projects: "Trabajo",
+      about: "Sobre mí",
+      skills: "Habilidades",
+      contact: "Contacto",
+      switchLanguage: "Switch to English",
+      switchLanguageShort: "EN",
+    },
+    home: {
+      availability: "Disponible para oportunidades seleccionadas",
+      eyebrow: "Ingeniero de Software · Full Stack",
+      headlineLead: "Construyo",
+      headlineAccent: "software empresarial",
+      headlineEnd: "preparado para el mundo real.",
+      introduction:
+        "Diseño y desarrollo sistemas full-stack donde convergen la complejidad operativa, las integraciones empresariales y una experiencia de usuario cuidadosa.",
+      viewProjects: "Explorar trabajo seleccionado",
+      github: "Ver perfil de GitHub",
+      location: "Desde Bolivia · Trabajando entre sistemas",
+      about: "Sobre mí",
+      aboutHeadline: "El software debe hacer que el trabajo complejo se sienta claro.",
+      aboutBody:
+        "Soy ingeniero de software full-stack enfocado en los sistemas que sostienen las operaciones diarias de una empresa. Mi trabajo abarca servicios backend, aplicaciones frontend, flujos de datos e integraciones con plataformas como SAP.",
+      aboutSecondary:
+        "Me importa entender el dominio antes de elegir la abstracción: construir software mantenible que los equipos puedan operar, extender y confiar.",
+      principles: [
+        "Modelar el dominio, no solo las pantallas",
+        "Hacer explícitas las decisiones",
+        "Diseñar para quienes operan el sistema",
+      ],
+      selectedWork: "Trabajo seleccionado",
+      engineeringProjects: "Casos de estudio de ingeniería de software aplicada.",
+      workIntroduction:
+        "Una selección de plataformas empresariales y productos de automatización, explicados desde el problema, la arquitectura y las decisiones de ingeniería.",
+      allProjects: "Ver todos los proyectos",
+      skills: "Habilidades y tecnologías",
+      skillsHeadline: "Un stack práctico para entregar de principio a fin.",
+      skillsIntroduction:
+        "Las herramientas se eligen según el problema. Estas son las tecnologías que uso con mayor frecuencia para convertir reglas de negocio en software confiable.",
+      skillGroups: [
+        {
+          title: "Backend y APIs",
+          items: [".NET", "Node.js", "Express", "APIs REST", "Autenticación"],
+        },
+        {
+          title: "Frontend",
+          items: ["TypeScript", "Angular", "React", "Next.js", "UI accesible"],
+        },
+        {
+          title: "Datos y empresa",
+          items: ["SQL Server", "MongoDB", "SAP HANA", "SAP Business One", "Reportes"],
+        },
+        {
+          title: "Práctica de ingeniería",
+          items: ["Diseño de sistemas", "Modelado de dominio", "Git", "Pruebas", "Contratos de API"],
+        },
+      ],
+      experience: "Enfoque de ingeniería",
+      experienceHeadline: "Del problema operativo a un sistema mantenible.",
+      experienceIntroduction:
+        "Mi experiencia se basa en entregar software dentro de entornos empresariales reales, donde la confiabilidad, el cambio y los límites de integración importan tanto como la interfaz.",
+      experienceSteps: [
+        {
+          number: "01",
+          title: "Entender la operación",
+          body: "Mapear usuarios, flujos, restricciones y las reglas de negocio que el software debe proteger.",
+        },
+        {
+          number: "02",
+          title: "Dar forma al sistema",
+          body: "Definir límites, contratos y flujos de datos que mantengan comprensibles el frontend, backend y las integraciones.",
+        },
+        {
+          number: "03",
+          title: "Entregar y evolucionar",
+          body: "Publicar incrementos útiles, observar su desempeño en la práctica y mejorar el diseño a medida que el dominio se vuelve más claro.",
+        },
+      ],
+      contact: "Contacto",
+      contactHeadline: "¿Tienes un sistema que necesita claridad?",
+      contactBody:
+        "Me interesa trabajar en ingeniería de software con problemas de producto relevantes, flujos complejos y equipos que valoren una ejecución cuidadosa.",
+      contactCta: "Iniciar una conversación en GitHub",
+    },
+    projects: {
+      eyebrow: "Trabajo seleccionado",
+      title: "Casos de estudio de ingeniería",
+      introduction:
+        "Un producto es más que sus pantallas. Estos casos se enfocan en el contexto operativo, el diseño del sistema y las decisiones detrás de la interfaz.",
+      privateSource: "Sistema privado",
+      viewCaseStudy: "Leer caso de estudio",
+      comingSoon: "Caso de estudio en desarrollo",
+      technologyLabel: "Stack principal",
+    },
+    caseStudy: {
+      eyebrow: "Caso de estudio de ingeniería",
+      stack: "Stack tecnológico",
+      introduction: "Introducción",
+      context: "Contexto y respuesta",
+      problem: "Problema",
+      solution: "Solución",
+      role: "Rol y responsabilidad",
+      architecture: "Arquitectura del sistema",
+      highlights: "Aspectos destacados de ingeniería",
+      challenges: "Desafíos y decisiones",
+      screenshots: "Vistas del producto",
+      improvements: "Aprendizajes y próximas mejoras",
+      repository: "Ver repositorio",
+      live: "Visitar producto",
+      demo: "Abrir demo interactiva",
+      privateNotice: "El código fuente es privado; este caso excluye detalles confidenciales de implementación y datos de clientes.",
+      backToProjects: "Volver a todos los proyectos",
+      nextProject: "Siguiente caso de estudio",
+      requestFlow: "Flujo de solicitud",
+      systemBoundary: "Límite del sistema",
+      interface: "Interfaz",
+      serviceLayer: "Capa de servicios",
+      dataSystems: "Datos / sistemas",
+    },
+    footer: {
+      description: "Ingeniero de software full-stack enfocado en sistemas empresariales confiables e integraciones.",
+      rights: "Todos los derechos reservados.",
+    },
+  },
+} as const satisfies Record<Locale, object>;

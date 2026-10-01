@@ -1,18 +1,26 @@
 
+import type { Locale } from "@/i18n/config";
+
 import { projects } from "../data/project";
 import { ProjectCard } from "./project-card";
 
-export function ProjectGrid() {
+interface ProjectGridProps {
+  locale: Locale;
+}
+
+export function ProjectGrid({ locale }: ProjectGridProps) {
   const featuredProjects = projects.filter(
     (project) => project.featured,
   );
 
   return (
-    <div className="grid gap-6 lg:grid-cols-2">
-      {featuredProjects.map((project) => (
+    <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      {featuredProjects.map((project, index) => (
         <ProjectCard
           key={project.slug}
           project={project}
+          locale={locale}
+          index={index + 1}
         />
       ))}
     </div>

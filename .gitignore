@@ -24,6 +24,9 @@
 .DS_Store
 *.pem
 
+# private reference screenshots (contain production-identifying data)
+/public/comprasYa/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

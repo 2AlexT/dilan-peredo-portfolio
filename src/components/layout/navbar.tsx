@@ -1,39 +1,77 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+import { siteCopy } from "@/i18n/copy";
+
 import { Container } from "../ui/container";
 
 export function Navbar() {
+  const pathname = usePathname();
+  const isSpanish = pathname === "/es" || pathname.startsWith("/es/");
+  const locale = isSpanish ? "es" : "en";
+  const copy = siteCopy[locale].navigation;
+  const localeRoot = isSpanish ? "/es" : "";
+  const languageHref = isSpanish
+    ? pathname.replace(/^\/es(?=\/|$)/, "") || "/"
+    : `/es${pathname === "/" ? "" : pathname}`;
+
   return (
-    <header className="border-b border-zinc-800">
+    <header
+      lang={locale}
+      className="sticky top-0 z-50 border-b border-line bg-background/95 backdrop-blur-sm"
+    >
       <Container>
-        <nav className="flex h-16 items-center justify-between">
+        <nav className="flex h-[4.5rem] items-center justify-between" aria-label="Primary navigation">
           <Link
-            href="/"
-            className="font-semibold tracking-tight text-white"
+            href={localeRoot || "/"}
+            className="inline-flex items-center gap-3 font-semibold tracking-tight text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
           >
-            Dilan Peredo
+            <span className="flex size-8 items-center justify-center border border-line font-mono text-[0.65rem] text-accent transition-colors group-hover:border-accent">
+              DP
+            </span>
+            <span className="hidden sm:inline">Dilan Peredo</span>
           </Link>
 
-          <div className="flex items-center gap-6 text-sm text-zinc-400">
+          <div className="flex items-center gap-4 font-mono text-xs uppercase tracking-[0.12em] text-muted sm:gap-6">
             <Link
-              href="/projects"
-              className="transition-colors hover:text-white"
+              href={`${localeRoot}/projects`}
+              className="transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
             >
-              Projects
+              {copy.projects}
             </Link>
 
-            <a
-              href="#about"
-              className="transition-colors hover:text-white"
+            <Link
+              href={`${localeRoot || "/"}#about`}
+              className="hidden transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent md:inline"
             >
-              About
-            </a>
+              {copy.about}
+            </Link>
 
-            <a
-              href="#contact"
-              className="transition-colors hover:text-white"
+            <Link
+              href={`${localeRoot || "/"}#skills`}
+              className="hidden transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent lg:inline"
             >
-              Contact
-            </a>
+              {copy.skills}
+            </Link>
+
+            <Link
+              href={`${localeRoot || "/"}#contact`}
+              className="hidden transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent sm:inline"
+            >
+              {copy.contact}
+            </Link>
+
+            <Link
+              href={languageHref}
+              hrefLang={isSpanish ? "en" : "es"}
+              aria-label={copy.switchLanguage}
+              title={copy.switchLanguage}
+              className="border-l border-line pl-4 font-semibold text-foreground transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent sm:pl-6"
+            >
+              {copy.switchLanguageShort}
+            </Link>
           </div>
         </nav>
       </Container>
