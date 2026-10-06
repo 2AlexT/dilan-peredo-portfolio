@@ -95,6 +95,11 @@ export const siteCopy = {
       contactEmail: "Email",
       contactPhone: "Phone",
       contactLocation: "Location",
+      documents: "Application documents",
+      documentsDescription: "Download my CV and a general software engineer cover letter.",
+      downloadCv: "Download CV (PDF)",
+      downloadCoverLetter: "Download cover letter (PDF)",
+      editableCoverLetter: "Editable letter (TXT)",
     },
     projects: {
       eyebrow: "Selected work",
@@ -230,6 +235,11 @@ export const siteCopy = {
       contactEmail: "Correo electrónico",
       contactPhone: "Teléfono",
       contactLocation: "Ubicación",
+      documents: "Documentos de postulación",
+      documentsDescription: "Descarga mi CV y una carta general para oportunidades de desarrollo de software.",
+      downloadCv: "Descargar CV (PDF)",
+      downloadCoverLetter: "Descargar carta de presentación (PDF)",
+      editableCoverLetter: "Carta editable (TXT)",
     },
     projects: {
       eyebrow: "Trabajo seleccionado",

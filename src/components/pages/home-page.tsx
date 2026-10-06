@@ -14,6 +14,8 @@ interface HomePageContentProps {
 export function HomePageContent({ locale }: HomePageContentProps) {
   const copy = siteCopy[locale].home;
   const localeRoot = locale === "es" ? "/es" : "";
+  const coverLetter = locale === "es" ? "Dilan_Peredo_Carta_Presentacion" : "Dilan_Peredo_Cover_Letter_English";
+  const cvFile = locale === "es" ? "Dilan_Peredo_CV.pdf" : "Dilan_Peredo_CV_English.pdf";
 
   return (
     <main id="main-content" lang={locale}>
@@ -240,6 +242,13 @@ export function HomePageContent({ locale }: HomePageContentProps) {
                 {copy.github}
                 <ExternalIcon />
               </a>
+              </div>
+              <div className="mt-10 border-t border-line pt-7">
+                <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-accent">{copy.documents}</h3>
+                <p className="mt-3 text-sm leading-7 text-muted">{copy.documentsDescription}</p>
+                <div className="mt-5 flex flex-wrap gap-x-6 gap-y-4">
+                  {[{ href: `/CV/${cvFile}`, label: copy.downloadCv }, { href: `/CoverLetters/${coverLetter}.pdf`, label: copy.downloadCoverLetter }, { href: `/CoverLetters/${coverLetter}.txt`, label: copy.editableCoverLetter }].map(document => <a key={document.href} href={document.href} download className="inline-flex min-h-11 items-center gap-2 border-b border-line py-2 text-sm font-semibold text-foreground transition-colors hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">{document.label}<span aria-hidden="true">↓</span></a>)}
+                </div>
               </div>
             </div>
           </div>

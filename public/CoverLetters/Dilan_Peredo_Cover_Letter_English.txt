@@ -1,0 +1,27 @@
+Dilan Alexander Peredo Flores
+
+Software Engineer / Full Stack Developer
+
+Santa Cruz, Bolivia | +591 67848167 | pfdilanalexander@gmail.com
+
+https://github.com/2AlexT
+
+Application for software engineering opportunities
+
+Dear Hiring Team,
+
+I am interested in software engineering opportunities where I can help turn business requirements into useful, maintainable systems. I am a full-stack developer based in Santa Cruz, Bolivia, with experience building procurement applications, ERP integrations, financial services and customer operations tools. My work connects backend APIs, frontend interfaces and databases around the workflows that people need to complete.
+
+At FRIGOR, I developed a purchasing management system using C#, Entity Framework and Angular, with traceability, versioning and multiple levels of approval. I also integrated SQL Server and Informix data sources. This work required translating operational rules into clear application behavior and keeping information consistent across systems.
+
+My work on Zazu shows another side of that experience: a React administrative frontend, a Node.js and Express backend, and WhatsApp automation connected through shared business records. The system brings together CRM, conversation funnels, a service catalog and appointment management. I worked across interfaces, APIs and conversation flows so that customer context could support the team's daily operation.
+
+I have also worked on SAP-connected ERP functionality at IFA and financial integrations at LINKSER, including custom endpoints and a migration from SOAP to REST. These projects strengthened my ability to understand existing systems, work across integration boundaries and contribute through analysis, implementation and testing.
+
+I would bring a practical approach to your team: understand the operation, make business rules explicit, and write code that other developers can maintain. I adapt to new technologies and teams, continue my Systems Engineering studies at UTEPSA, and communicate in native Spanish and advanced English.
+
+I would welcome an opportunity to discuss how my experience could support your engineering priorities. My CV, portfolio case studies and GitHub profile provide further context on my work. Thank you for your time and consideration.
+
+Sincerely,
+
+Dilan Alexander Peredo Flores

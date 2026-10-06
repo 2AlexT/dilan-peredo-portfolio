@@ -1,0 +1,32 @@
+{
+  "en": {
+    "filename": "Dilan_Peredo_Cover_Letter_English",
+    "title": "Software Engineer / Full Stack Developer",
+    "subject": "Application for software engineering opportunities",
+    "salutation": "Dear Hiring Team,",
+    "paragraphs": [
+      "I am interested in software engineering opportunities where I can help turn business requirements into useful, maintainable systems. I am a full-stack developer based in Santa Cruz, Bolivia, with experience building procurement applications, ERP integrations, financial services and customer operations tools. My work connects backend APIs, frontend interfaces and databases around the workflows that people need to complete.",
+      "At FRIGOR, I developed a purchasing management system using C#, Entity Framework and Angular, with traceability, versioning and multiple levels of approval. I also integrated SQL Server and Informix data sources. This work required translating operational rules into clear application behavior and keeping information consistent across systems.",
+      "My work on Zazu shows another side of that experience: a React administrative frontend, a Node.js and Express backend, and WhatsApp automation connected through shared business records. The system brings together CRM, conversation funnels, a service catalog and appointment management. I worked across interfaces, APIs and conversation flows so that customer context could support the team's daily operation.",
+      "I have also worked on SAP-connected ERP functionality at IFA and financial integrations at LINKSER, including custom endpoints and a migration from SOAP to REST. These projects strengthened my ability to understand existing systems, work across integration boundaries and contribute through analysis, implementation and testing.",
+      "I would bring a practical approach to your team: understand the operation, make business rules explicit, and write code that other developers can maintain. I adapt to new technologies and teams, continue my Systems Engineering studies at UTEPSA, and communicate in native Spanish and advanced English.",
+      "I would welcome an opportunity to discuss how my experience could support your engineering priorities. My CV, portfolio case studies and GitHub profile provide further context on my work. Thank you for your time and consideration."
+    ],
+    "closing": "Sincerely,"
+  },
+  "es": {
+    "filename": "Dilan_Peredo_Carta_Presentacion",
+    "title": "Desarrollador de software / Full Stack",
+    "subject": "Postulación a oportunidades de desarrollo de software",
+    "salutation": "Estimado equipo de selección:",
+    "paragraphs": [
+      "Me interesa aportar a un equipo de desarrollo de software que transforme necesidades de negocio en sistemas útiles y mantenibles. Soy desarrollador full-stack en Santa Cruz, Bolivia, con experiencia en aplicaciones de compras, integraciones ERP, servicios financieros y herramientas para la gestión de clientes. Mi trabajo conecta APIs, interfaces y bases de datos alrededor de los procesos que las personas necesitan completar.",
+      "En FRIGOR desarrollé un sistema de gestión de compras con C#, Entity Framework y Angular, incorporando trazabilidad, versionado y varios niveles de aprobación. También integré fuentes de datos de SQL Server e Informix. Este trabajo exigió traducir reglas operativas en comportamientos claros de la aplicación y mantener la información consistente entre sistemas.",
+      "Mi trabajo en Zazu refleja otra parte de esa experiencia: un frontend administrativo en React, un backend con Node.js y Express y automatización de WhatsApp conectados mediante registros de negocio compartidos. El sistema reúne CRM, embudos de conversación, catálogo de servicios y gestión de citas. Trabajé en interfaces, APIs y flujos para que el contexto del cliente apoyara la operación diaria del equipo.",
+      "También trabajé en funcionalidades de ERP conectadas con SAP en IFA y en integraciones financieras en LINKSER, incluyendo endpoints específicos y una migración de SOAP a REST. Estos proyectos fortalecieron mi capacidad para comprender sistemas existentes, trabajar entre distintas integraciones y participar en análisis, implementación y pruebas.",
+      "Aportaría un enfoque práctico: comprender la operación, hacer explícitas las reglas de negocio y escribir código que otros desarrolladores puedan mantener. Me adapto a nuevas tecnologías y equipos, continúo mis estudios de Ingeniería en Sistemas en UTEPSA y me comunico en español nativo e inglés avanzado.",
+      "Me gustaría conversar sobre cómo mi experiencia puede contribuir a las prioridades de su equipo. Mi CV, los casos de estudio de mi portfolio y mi perfil de GitHub ofrecen más contexto sobre mi trabajo. Gracias por su tiempo y consideración."
+    ],
+    "closing": "Atentamente,"
+  }
+}

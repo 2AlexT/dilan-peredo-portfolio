@@ -1,0 +1,27 @@
+Dilan Alexander Peredo Flores
+
+Desarrollador de software / Full Stack
+
+Santa Cruz, Bolivia | +591 67848167 | pfdilanalexander@gmail.com
+
+https://github.com/2AlexT
+
+Postulación a oportunidades de desarrollo de software
+
+Estimado equipo de selección:
+
+Me interesa aportar a un equipo de desarrollo de software que transforme necesidades de negocio en sistemas útiles y mantenibles. Soy desarrollador full-stack en Santa Cruz, Bolivia, con experiencia en aplicaciones de compras, integraciones ERP, servicios financieros y herramientas para la gestión de clientes. Mi trabajo conecta APIs, interfaces y bases de datos alrededor de los procesos que las personas necesitan completar.
+
+En FRIGOR desarrollé un sistema de gestión de compras con C#, Entity Framework y Angular, incorporando trazabilidad, versionado y varios niveles de aprobación. También integré fuentes de datos de SQL Server e Informix. Este trabajo exigió traducir reglas operativas en comportamientos claros de la aplicación y mantener la información consistente entre sistemas.
+
+Mi trabajo en Zazu refleja otra parte de esa experiencia: un frontend administrativo en React, un backend con Node.js y Express y automatización de WhatsApp conectados mediante registros de negocio compartidos. El sistema reúne CRM, embudos de conversación, catálogo de servicios y gestión de citas. Trabajé en interfaces, APIs y flujos para que el contexto del cliente apoyara la operación diaria del equipo.
+
+También trabajé en funcionalidades de ERP conectadas con SAP en IFA y en integraciones financieras en LINKSER, incluyendo endpoints específicos y una migración de SOAP a REST. Estos proyectos fortalecieron mi capacidad para comprender sistemas existentes, trabajar entre distintas integraciones y participar en análisis, implementación y pruebas.
+
+Aportaría un enfoque práctico: comprender la operación, hacer explícitas las reglas de negocio y escribir código que otros desarrolladores puedan mantener. Me adapto a nuevas tecnologías y equipos, continúo mis estudios de Ingeniería en Sistemas en UTEPSA y me comunico en español nativo e inglés avanzado.
+
+Me gustaría conversar sobre cómo mi experiencia puede contribuir a las prioridades de su equipo. Mi CV, los casos de estudio de mi portfolio y mi perfil de GitHub ofrecen más contexto sobre mi trabajo. Gracias por su tiempo y consideración.
+
+Atentamente,
+
+Dilan Alexander Peredo Flores
