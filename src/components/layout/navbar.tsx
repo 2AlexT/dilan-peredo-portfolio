@@ -24,15 +24,17 @@ export function Navbar() {
     >
       <Container>
         <nav className="flex h-[4.5rem] items-center justify-between" aria-label="Primary navigation">
-          <Link
-            href={localeRoot || "/"}
-            className="inline-flex items-center gap-3 font-semibold tracking-tight text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+          <a
+            href={`${localeRoot || "/"}#top`}
+            aria-label={copy.home}
+            title={copy.homeTitle}
+            className="group inline-flex items-center gap-3 font-semibold tracking-tight text-foreground transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
           >
             <span className="flex size-8 items-center justify-center border border-line font-mono text-[0.65rem] text-accent transition-colors group-hover:border-accent">
               DP
             </span>
             <span className="hidden sm:inline">Dilan Peredo</span>
-          </Link>
+          </a>
 
           <div className="flex items-center gap-4 font-mono text-xs uppercase tracking-[0.12em] text-muted sm:gap-6">
             <a

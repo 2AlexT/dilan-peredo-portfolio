@@ -3,6 +3,8 @@ import type { Locale } from "./config";
 export const siteCopy = {
   en: {
     navigation: {
+      home: "Dilan Peredo — Home",
+      homeTitle: "Go to the top of the home page",
       projects: "Work",
       about: "About",
       skills: "Skills",
@@ -136,6 +138,8 @@ export const siteCopy = {
   },
   es: {
     navigation: {
+      home: "Dilan Peredo — Inicio",
+      homeTitle: "Ir al inicio de la página principal",
       projects: "Trabajo",
       about: "Sobre mí",
       skills: "Habilidades",

@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <body className="bg-background text-foreground antialiased">
+      <body id="top" className="bg-background text-foreground antialiased">
         <RouteTransition />
         <a
           href="#main-content"
