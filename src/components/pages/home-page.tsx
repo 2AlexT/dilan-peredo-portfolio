@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { profile } from "@/data/profile";
 import { ProjectGrid } from "@/features/projects/components/project-grid";
 import type { Locale } from "@/i18n/config";
 import { siteCopy } from "@/i18n/copy";
@@ -30,7 +31,10 @@ export function HomePageContent({ locale }: HomePageContentProps) {
               <span>{copy.eyebrow}</span>
             </div>
 
-            <h1 className="reveal reveal-delay-1 mt-8 max-w-6xl text-5xl font-semibold leading-[0.95] tracking-[-0.055em] text-foreground sm:text-7xl lg:text-[clamp(4.5rem,7.4vw,8rem)]">
+            <p className="reveal reveal-delay-1 mt-8 text-sm font-medium tracking-wide text-foreground/80 sm:text-base">
+              {profile.name}
+            </p>
+            <h1 className="reveal reveal-delay-1 mt-5 max-w-6xl text-5xl font-semibold leading-[0.95] tracking-[-0.055em] text-foreground sm:text-7xl lg:text-[clamp(4.5rem,7.4vw,8rem)]">
               {copy.headlineLead}{" "}
               <span className="text-accent">{copy.headlineAccent}</span>{" "}
               {copy.headlineEnd}
@@ -49,7 +53,7 @@ export function HomePageContent({ locale }: HomePageContentProps) {
                 <ArrowIcon />
               </a>
               <a
-                href="https://github.com/2AlexT"
+                href={profile.githubUrl}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex min-h-11 items-center gap-2 border-b border-line py-2 text-sm font-semibold text-foreground transition-colors hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
@@ -102,6 +106,16 @@ export function HomePageContent({ locale }: HomePageContentProps) {
               </ol>
             </div>
           </div>
+          <dl className="mt-12 grid gap-8 border-t border-line pt-8 md:grid-cols-2">
+            <div>
+              <dt className="font-mono text-xs uppercase tracking-[0.14em] text-accent">{copy.education}</dt>
+              <dd className="mt-3 text-sm leading-7 text-muted">{copy.educationBody}</dd>
+            </div>
+            <div>
+              <dt className="font-mono text-xs uppercase tracking-[0.14em] text-accent">{copy.languages}</dt>
+              <dd className="mt-3 text-sm leading-7 text-muted">{copy.languagesBody}</dd>
+            </div>
+          </dl>
         </Container>
       </section>
 
@@ -199,20 +213,48 @@ export function HomePageContent({ locale }: HomePageContentProps) {
                 {copy.contactHeadline}
               </h2>
               <p className="mt-7 max-w-2xl text-lg leading-8 text-muted">{copy.contactBody}</p>
+              <dl className="mt-9 grid gap-x-8 gap-y-6 border-t border-line pt-7 sm:grid-cols-2">
+                <ContactDetail label={copy.contactName}>{profile.name}</ContactDetail>
+                <ContactDetail label={copy.contactEmail}>
+                  <a href={`mailto:${profile.email}`} className="break-all underline decoration-line underline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">{profile.email}</a>
+                </ContactDetail>
+                <ContactDetail label={copy.contactPhone}>
+                  <a href={profile.phoneHref} className="underline decoration-line underline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">{profile.phone}</a>
+                </ContactDetail>
+                <ContactDetail label={copy.contactLocation}>{profile.location}</ContactDetail>
+              </dl>
+              <div className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-5">
               <a
-                href="https://github.com/2AlexT"
-                target="_blank"
-                rel="noreferrer"
-                className="group mt-10 inline-flex min-h-12 items-center gap-3 bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-soft focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+                href={`mailto:${profile.email}`}
+                className="group inline-flex min-h-12 items-center gap-3 bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-soft focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
               >
                 {copy.contactCta}
+                <ArrowIcon />
+              </a>
+              <a
+                href={profile.githubUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex min-h-11 items-center gap-2 border-b border-line py-2 text-sm font-semibold text-foreground transition-colors hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+              >
+                {copy.github}
                 <ExternalIcon />
               </a>
+              </div>
             </div>
           </div>
         </Container>
       </section>
     </main>
+  );
+}
+
+function ContactDetail({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div className="min-w-0">
+      <dt className="font-mono text-xs uppercase tracking-[0.14em] text-muted">{label}</dt>
+      <dd className="mt-2 text-base text-foreground">{children}</dd>
+    </div>
   );
 }
 

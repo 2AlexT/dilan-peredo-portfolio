@@ -35,33 +35,33 @@ export function Navbar() {
           </Link>
 
           <div className="flex items-center gap-4 font-mono text-xs uppercase tracking-[0.12em] text-muted sm:gap-6">
-            <Link
-              href={`${localeRoot}/projects`}
+            <a
+              href={`${localeRoot || "/"}#work`}
               className="transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
             >
               {copy.projects}
-            </Link>
+            </a>
 
-            <Link
+            <a
               href={`${localeRoot || "/"}#about`}
               className="hidden transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent md:inline"
             >
               {copy.about}
-            </Link>
+            </a>
 
-            <Link
+            <a
               href={`${localeRoot || "/"}#skills`}
               className="hidden transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent lg:inline"
             >
               {copy.skills}
-            </Link>
+            </a>
 
-            <Link
+            <a
               href={`${localeRoot || "/"}#contact`}
               className="hidden transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent sm:inline"
             >
               {copy.contact}
-            </Link>
+            </a>
 
             <Link
               href={languageHref}

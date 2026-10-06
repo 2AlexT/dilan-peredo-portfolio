@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { RouteTransition } from "@/components/ui/route-transition";
+import { profile } from "@/data/profile";
 
 import "./globals.css";
 
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Software Engineer specializing in .NET, TypeScript, Angular, React and enterprise software systems.",
   applicationName: "Dilan Peredo — Software Engineer",
-  authors: [{ name: "Dilan Peredo" }],
+  authors: [{ name: profile.name }],
   keywords: [
     "Software Engineer",
     "Full Stack Developer",

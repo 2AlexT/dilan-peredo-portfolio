@@ -20,13 +20,17 @@ export const siteCopy = {
         "I design and build full-stack systems where operational complexity, enterprise integrations, and thoughtful user experience meet.",
       viewProjects: "Explore selected work",
       github: "View GitHub profile",
-      location: "Based in Bolivia · Working across systems",
+      location: "Based in Santa Cruz, Bolivia · Working across systems",
       about: "About",
       aboutHeadline: "Software should make complex work feel clear.",
       aboutBody:
-        "I am a full-stack software engineer focused on the systems behind day-to-day business operations. My work spans backend services, frontend applications, data workflows, and integrations with platforms such as SAP.",
+        "I’m Dilan Alexander Peredo Flores, a full-stack software developer based in Santa Cruz, Bolivia. My experience spans procurement and ERP systems, financial integrations, CRM and chatbot applications, using C#/.NET, Java/Spring Boot, Node.js, Angular and React.",
       aboutSecondary:
-        "I care about understanding the domain before choosing the abstraction—building maintainable software that teams can operate, extend, and trust.",
+        "I focus on clean, maintainable code and enjoy working with relational and non-relational databases. I adapt to new teams and technologies, with experience across FRIGOR, IFA, LINKSER, LAMBADA SRL, Hotel Los Tajibos and Banco Fassil.",
+      education: "Education",
+      educationBody: "Systems Engineering studies at UTEPSA, since April 2024. Technical training in computer programming and computer maintenance at INFOCAL.",
+      languages: "Languages",
+      languagesBody: "Spanish: native · English: advanced (CAI certified) · French: intermediate (CAI courses)",
       principles: [
         "Model the domain, not just the screens",
         "Make tradeoffs explicit",
@@ -84,7 +88,11 @@ export const siteCopy = {
       contactHeadline: "Have a system that needs clarity?",
       contactBody:
         "I am interested in software engineering work involving meaningful product problems, complex workflows, and teams that value thoughtful execution.",
-      contactCta: "Start a conversation on GitHub",
+      contactCta: "Email me",
+      contactName: "Name",
+      contactEmail: "Email",
+      contactPhone: "Phone",
+      contactLocation: "Location",
     },
     projects: {
       eyebrow: "Selected work",
@@ -145,13 +153,17 @@ export const siteCopy = {
         "Diseño y desarrollo sistemas full-stack donde convergen la complejidad operativa, las integraciones empresariales y una experiencia de usuario cuidadosa.",
       viewProjects: "Explorar trabajo seleccionado",
       github: "Ver perfil de GitHub",
-      location: "Desde Bolivia · Trabajando entre sistemas",
+      location: "Desde Santa Cruz, Bolivia · Trabajando entre sistemas",
       about: "Sobre mí",
       aboutHeadline: "El software debe hacer que el trabajo complejo se sienta claro.",
       aboutBody:
-        "Soy ingeniero de software full-stack enfocado en los sistemas que sostienen las operaciones diarias de una empresa. Mi trabajo abarca servicios backend, aplicaciones frontend, flujos de datos e integraciones con plataformas como SAP.",
+        "Soy Dilan Alexander Peredo Flores, desarrollador de software full-stack en Santa Cruz, Bolivia. Mi experiencia abarca sistemas de compras y ERP, integraciones financieras, CRM y chatbots, utilizando C#/.NET, Java/Spring Boot, Node.js, Angular y React.",
       aboutSecondary:
-        "Me importa entender el dominio antes de elegir la abstracción: construir software mantenible que los equipos puedan operar, extender y confiar.",
+        "Me enfoco en escribir código limpio y mantenible, y disfruto trabajar con bases de datos relacionales y no relacionales. Me adapto a nuevos equipos y tecnologías, con experiencia en FRIGOR, IFA, LINKSER, LAMBADA SRL, Hotel Los Tajibos y Banco Fassil.",
+      education: "Formación",
+      educationBody: "Estudios de Ingeniería en Sistemas en UTEPSA desde abril de 2024. Formación técnica en programación y mantenimiento de computadoras en INFOCAL.",
+      languages: "Idiomas",
+      languagesBody: "Español: nativo · Inglés: avanzado (certificado por el CAI) · Francés: intermedio (cursos CAI)",
       principles: [
         "Modelar el dominio, no solo las pantallas",
         "Hacer explícitas las decisiones",
@@ -209,7 +221,11 @@ export const siteCopy = {
       contactHeadline: "¿Tienes un sistema que necesita claridad?",
       contactBody:
         "Me interesa trabajar en ingeniería de software con problemas de producto relevantes, flujos complejos y equipos que valoren una ejecución cuidadosa.",
-      contactCta: "Iniciar una conversación en GitHub",
+      contactCta: "Escríbeme por correo",
+      contactName: "Nombre",
+      contactEmail: "Correo electrónico",
+      contactPhone: "Teléfono",
+      contactLocation: "Ubicación",
     },
     projects: {
       eyebrow: "Trabajo seleccionado",

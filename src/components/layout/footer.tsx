@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { Container } from "@/components/ui/container";
+import { profile } from "@/data/profile";
 import { siteCopy } from "@/i18n/copy";
 
 export function Footer() {
@@ -28,6 +29,9 @@ export function Footer() {
           <p className="mt-4 max-w-md text-sm leading-6 text-muted">
             {copy.description}
           </p>
+          <a href={`mailto:${profile.email}`} className="mt-3 inline-block break-all text-sm text-muted underline decoration-line underline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
+            {profile.email}
+          </a>
         </div>
 
         <p className="font-mono text-xs uppercase tracking-[0.12em] text-muted">
