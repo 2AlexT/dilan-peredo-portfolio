@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Prebuilt Angular demo bundles; source is verified in its own repository.
+    "public/demo-apps/**",
   ]),
 ]);
 

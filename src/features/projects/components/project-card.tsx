@@ -25,7 +25,7 @@ export function ProjectCard({
 
   const cardContent = (
     <>
-      <ProjectVisual project={project} />
+      <ProjectVisual project={content} />
 
       <div className="flex flex-1 flex-col p-6 sm:p-7">
         <div className="flex items-center justify-between gap-4 font-mono text-[0.62rem] uppercase tracking-[0.14em] text-muted">

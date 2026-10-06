@@ -9,6 +9,7 @@ import { getLocalizedProject } from "../data/get-project";
 import { projects } from "../data/project";
 import type { PortfolioProject } from "../types/project";
 import { ProjectVisual } from "./project-visual";
+import { ZazuArchitecture, ZazuSystemScope } from "./zazu-system";
 
 interface ProjectDetailProps {
   project: PortfolioProject;
@@ -72,7 +73,12 @@ export function ProjectDetail({ project, locale }: ProjectDetailProps) {
 
                 {(repositoryUrl || project.liveUrl || project.demoSlug) && (
                   <div className="mt-6 flex flex-wrap gap-5">
-                    {project.demoSlug && (
+                    {content.demoLinks?.map((demo) => (
+                      <Link key={demo.slug} href={`${localeRoot}/demos/${demo.slug}`} className="border-b border-accent pb-1 text-sm font-semibold text-accent hover:text-accent-soft focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
+                        {demo.label} →
+                      </Link>
+                    ))}
+                    {project.demoSlug && !content.demoLinks?.length && (
                       <Link
                         href={`${localeRoot}/demos/${project.demoSlug}`}
                         className="border-b border-accent pb-1 text-sm font-semibold text-accent transition-colors hover:border-accent-soft hover:text-accent-soft focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
@@ -92,7 +98,7 @@ export function ProjectDetail({ project, locale }: ProjectDetailProps) {
             </div>
 
             <div className="mt-16 sm:mt-20">
-              <ProjectVisual project={project} large />
+              <ProjectVisual project={content} large />
             </div>
           </Container>
         </header>
@@ -100,6 +106,8 @@ export function ProjectDetail({ project, locale }: ProjectDetailProps) {
         {content.overview && (
           <NarrativeSection index="01" title={copy.introduction} body={content.overview} />
         )}
+
+        {project.slug === "zazu-platform" && content.demoLinks && <ZazuSystemScope locale={locale} demos={content.demoLinks} />}
 
         {(content.problem || content.solution || content.role) && (
           <section className="section-rule py-20 sm:py-28">
@@ -137,7 +145,7 @@ export function ProjectDetail({ project, locale }: ProjectDetailProps) {
                   <p className="max-w-3xl text-xl leading-9 text-foreground/90">
                     {content.architecture}
                   </p>
-                  <ArchitectureDiagram
+                  {project.slug === "zazu-platform" ? <ZazuArchitecture locale={locale} /> : <ArchitectureDiagram
                     project={project}
                     labels={{
                       requestFlow: copy.requestFlow,
@@ -146,7 +154,7 @@ export function ProjectDetail({ project, locale }: ProjectDetailProps) {
                       serviceLayer: copy.serviceLayer,
                       dataSystems: copy.dataSystems,
                     }}
-                  />
+                  />}
                 </div>
               </div>
             </Container>

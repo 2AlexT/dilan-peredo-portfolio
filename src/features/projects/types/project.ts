@@ -20,6 +20,7 @@ export interface PortfolioProject {
   repositoryUrl?: string;
   liveUrl?: string;
   demoSlug?: string;
+  demoLinks?: ProjectDemoLink[];
   overview?: string;
   problem?: string;
   solution?: string;
@@ -27,6 +28,7 @@ export interface PortfolioProject {
   architecture?: string;
   highlights?: ProjectSection[];
   challenges?: ProjectSection[];
+  coverImage?: ProjectImage;
   screenshots?: ProjectImage[];
   improvements?: string[];
   translations?: Partial<
@@ -39,6 +41,12 @@ export interface ProjectSection {
   body: string;
 }
 
+export interface ProjectDemoLink {
+  slug: string;
+  label: string;
+  description: string;
+}
+
 export interface ProjectImage {
   src: string;
   alt: string;
@@ -49,6 +57,7 @@ export interface ProjectTranslation {
   name: string;
   subtitle: string;
   description: string;
+  demoLinks?: ProjectDemoLink[];
   overview?: string;
   problem?: string;
   solution?: string;
@@ -56,6 +65,7 @@ export interface ProjectTranslation {
   architecture?: string;
   highlights?: ProjectSection[];
   challenges?: ProjectSection[];
+  coverImage?: ProjectImage;
   screenshots?: ProjectImage[];
   improvements?: string[];
 }

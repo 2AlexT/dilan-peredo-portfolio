@@ -1,4 +1,5 @@
 import type { PortfolioProject } from "../types/project";
+import { zazuProject } from "./zazu-project";
 
 export const projects: PortfolioProject[] = [
   {
@@ -21,6 +22,12 @@ export const projects: PortfolioProject[] = [
     status: "published",
     privateSource: true,
     featured: true,
+    demoSlug: "sap",
+    coverImage: {
+      src: "/project-media/sap/demo-cover.jpg",
+      alt: "SAP portfolio demo showing the backoffice navigation, sales and collection indicators, monthly chart, and branch breakdown with fictional data",
+      caption: "Interactive demo · Fictional data",
+    },
 
     overview:
       "A large internal business platform supporting operational areas such as sales, inventory, accounting, collections, finance, invoicing, planning and master data while integrating directly with SAP systems.",
@@ -73,6 +80,12 @@ export const projects: PortfolioProject[] = [
       },
     ],
 
+    screenshots: [{
+      src: "/project-media/sap/demo-overview.png",
+      alt: "Portfolio backoffice demonstration with fictional sales metrics, monthly charts and branch summaries",
+      caption: "A separate five-screen portfolio demo using fictional records. Original SAP integrations and private source remain outside the public demonstration.",
+    }],
+
     improvements: [
       "Reduce controller size and move business logic into dedicated services.",
       "Introduce stronger automated testing.",
@@ -85,6 +98,11 @@ export const projects: PortfolioProject[] = [
     translations: {
       es: {
         name: "Plataforma de Operaciones SAP",
+        coverImage: {
+          src: "/project-media/sap/demo-cover.jpg",
+          alt: "Demo de operaciones SAP con navegación de backoffice, indicadores de ventas y cobranzas, gráfico mensual y distribución por sucursal con datos ficticios",
+          caption: "Demo interactiva · Datos ficticios",
+        },
         subtitle: "Operaciones y analítica empresarial",
         description:
           "Plataforma empresarial que integra operaciones de negocio con SAP HANA, SAP Business One y sistemas internos.",
@@ -132,6 +150,12 @@ export const projects: PortfolioProject[] = [
               "El sistema genera tablas operativas, exportaciones a Excel, archivos PDF, flujos basados en códigos QR y visualizaciones analíticas para distintos roles empresariales.",
           },
         ],
+        screenshots: [{
+          src: "/project-media/sap/demo-overview.png",
+          alt: "Demo de backoffice con indicadores ficticios de ventas, gráficos mensuales y resumen por sucursal",
+          caption: "Demo independiente de cinco pantallas con datos ficticios. Las integraciones SAP originales y el código privado quedan fuera de la demostración pública.",
+        }],
+
         improvements: [
           "Reducir el tamaño de los controladores y mover la lógica de negocio a servicios dedicados.",
           "Incorporar pruebas automatizadas más sólidas.",
@@ -144,144 +168,7 @@ export const projects: PortfolioProject[] = [
     },
   },
 
-  {
-    slug: "zazu-platform",
-    name: "ZAZU Platform",
-    subtitle: "Business Automation Platform",
-    description:
-      "Customer operations and automation platform combining CRM functionality, analytics and WhatsApp workflows.",
-
-    technologies: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "WhatsApp",
-    ],
-
-    status: "published",
-    privateSource: true,
-    featured: true,
-
-    overview:
-      "A customer operations platform combining administrative dashboards, CRM functionality, appointment and booking workflows, analytics and automated WhatsApp interactions.",
-
-    problem:
-      "Customer information, bookings and follow-up actions needed to be managed as one operating flow. Separate tools made it harder to keep context and automate timely customer communication.",
-
-    solution:
-      "A unified administrative product connected CRM workflows, scheduling, services, analytics and messaging automation through a shared application and data model.",
-
-    role:
-      "Full Stack development across frontend interfaces, backend APIs and customer automation workflows.",
-
-    architecture:
-      "React-based administrative frontend connected to Node.js and Express services backed by MongoDB, with additional automation services for WhatsApp and external integrations.",
-
-    highlights: [
-      {
-        title: "Workflow-centered UI",
-        body:
-          "Administrative screens connected customer context, bookings and services so teams could move through the operation without repeatedly rebuilding context.",
-      },
-      {
-        title: "Shared data model",
-        body:
-          "Customer and operational data supported multiple product capabilities, reducing fragmentation between CRM, scheduling and reporting features.",
-      },
-      {
-        title: "Automation touchpoints",
-        body:
-          "Messaging and external services were integrated as workflow events, making automation part of the product experience rather than a disconnected tool.",
-      },
-    ],
-
-    challenges: [
-      {
-        title: "Growing business functionality",
-        body:
-          "The system evolved beyond basic CRUD operations into CRM, bookings, customer management, products, services and automated interactions.",
-      },
-      {
-        title: "Frontend state and dashboards",
-        body:
-          "Administrative interfaces required shared application state, complex forms, data grids, charts and export functionality.",
-      },
-      {
-        title: "External integrations",
-        body:
-          "The system integrated messaging, email and file services that introduced additional authentication, reliability and data-exchange concerns.",
-      },
-    ],
-
-    improvements: [
-      "Adopt TypeScript throughout the backend.",
-      "Introduce stronger feature boundaries.",
-      "Increase automated test coverage.",
-      "Improve observability and structured logging.",
-      "Introduce CI/CD and containerized environments.",
-    ],
-
-    translations: {
-      es: {
-        name: "Plataforma ZAZU",
-        subtitle: "Plataforma de automatización empresarial",
-        description:
-          "Plataforma de operaciones de clientes y automatización que combina funciones de CRM, analítica y flujos de WhatsApp.",
-        overview:
-          "Una plataforma de operaciones de clientes que reúne paneles administrativos, funciones de CRM, flujos de citas y reservas, analítica e interacciones automatizadas mediante WhatsApp.",
-        problem:
-          "La información de clientes, las reservas y las acciones de seguimiento necesitaban gestionarse como un solo flujo operativo. Las herramientas separadas dificultaban conservar el contexto y automatizar comunicaciones oportunas.",
-        solution:
-          "Un producto administrativo unificado conectó los flujos de CRM, la programación, los servicios, la analítica y la automatización de mensajes mediante una aplicación y un modelo de datos compartidos.",
-        role:
-          "Desarrollo Full Stack de interfaces frontend, APIs backend y flujos de automatización para clientes.",
-        architecture:
-          "Frontend administrativo en React conectado a servicios de Node.js y Express con MongoDB, además de servicios de automatización para WhatsApp e integraciones externas.",
-        highlights: [
-          {
-            title: "Interfaz centrada en flujos",
-            body:
-              "Las pantallas administrativas conectaron el contexto del cliente, las reservas y los servicios para que los equipos avanzaran sin reconstruir información en cada paso.",
-          },
-          {
-            title: "Modelo de datos compartido",
-            body:
-              "Los datos de clientes y operaciones sostuvieron varias capacidades del producto, reduciendo la fragmentación entre CRM, agenda y reportes.",
-          },
-          {
-            title: "Puntos de automatización",
-            body:
-              "La mensajería y los servicios externos se integraron como eventos del flujo, haciendo que la automatización formara parte del producto y no de una herramienta aislada.",
-          },
-        ],
-        challenges: [
-          {
-            title: "Crecimiento de las funciones del negocio",
-            body:
-              "El sistema evolucionó más allá de operaciones CRUD básicas para incorporar CRM, reservas, gestión de clientes, productos, servicios e interacciones automatizadas.",
-          },
-          {
-            title: "Estado del frontend y paneles",
-            body:
-              "Las interfaces administrativas necesitaron estado compartido, formularios complejos, tablas de datos, gráficos y funciones de exportación.",
-          },
-          {
-            title: "Integraciones externas",
-            body:
-              "El sistema integró servicios de mensajería, correo electrónico y archivos, agregando consideraciones de autenticación, confiabilidad e intercambio de datos.",
-          },
-        ],
-        improvements: [
-          "Adoptar TypeScript en todo el backend.",
-          "Definir límites más sólidos entre funcionalidades.",
-          "Aumentar la cobertura de pruebas automatizadas.",
-          "Mejorar la observabilidad y el registro estructurado.",
-          "Incorporar CI/CD y entornos contenerizados.",
-        ],
-      },
-    },
-  },
+  zazuProject,
 
   {
     slug: "comprasya",
@@ -303,6 +190,11 @@ export const projects: PortfolioProject[] = [
     privateSource: true,
     featured: true,
     demoSlug: "comprasya",
+    coverImage: {
+      src: "/project-media/comprasya/dashboard-analyst-sanitized.png",
+      alt: "Original ComprasYa Angular purchasing analyst dashboard with purchase-order indicators, anonymized sample supplier names and a request trend chart",
+      caption: "Original frontend · Anonymized capture",
+    },
 
     overview:
       "ComprasYa is a procurement and approval platform developed for Frigor. It connects the lifecycle of a purchase—from an employee request and multi-step approval through purchase-order processing and warehouse follow-up—inside one role-aware system.",
@@ -394,6 +286,11 @@ export const projects: PortfolioProject[] = [
       es: {
         name: "ComprasYa",
         subtitle: "Plataforma de compras y aprobaciones",
+        coverImage: {
+          src: "/project-media/comprasya/dashboard-analyst-sanitized.png",
+          alt: "Panel original de ComprasYa en Angular para el analista de compras, con indicadores de órdenes, nombres de proveedores de ejemplo anonimizados y gráfico de solicitudes",
+          caption: "Frontend original · Captura anonimizada",
+        },
         description:
           "Sistema empresarial de adquisiciones que coordina solicitudes, aprobaciones, órdenes de compra, inventario y proveedores entre múltiples roles operativos.",
         overview:

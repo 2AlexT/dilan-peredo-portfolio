@@ -1,0 +1,1354 @@
+{
+  "version": 1,
+  "snapshotDate": "2026-10-06",
+  "customers": [
+    {
+      "id": "CLI-001",
+      "name": "Farmacia Aurora",
+      "city": "La Paz",
+      "contact": "Contacto de ejemplo 1",
+      "email": "cliente1@example.com",
+      "creditLimit": 15000,
+      "active": true
+    },
+    {
+      "id": "CLI-002",
+      "name": "Distribuidora Horizonte",
+      "city": "Santa Cruz",
+      "contact": "Contacto de ejemplo 2",
+      "email": "cliente2@example.com",
+      "creditLimit": 17500,
+      "active": true
+    },
+    {
+      "id": "CLI-003",
+      "name": "Centro Médico Amanecer",
+      "city": "Cochabamba",
+      "contact": "Contacto de ejemplo 3",
+      "email": "cliente3@example.com",
+      "creditLimit": 20000,
+      "active": true
+    },
+    {
+      "id": "CLI-004",
+      "name": "Farmacia Los Cedros",
+      "city": "Sucre",
+      "contact": "Contacto de ejemplo 4",
+      "email": "cliente4@example.com",
+      "creditLimit": 22500,
+      "active": true
+    },
+    {
+      "id": "CLI-005",
+      "name": "Clínica Mirador",
+      "city": "La Paz",
+      "contact": "Contacto de ejemplo 5",
+      "email": "cliente5@example.com",
+      "creditLimit": 25000,
+      "active": true
+    },
+    {
+      "id": "CLI-006",
+      "name": "Distribuidora Sol",
+      "city": "Santa Cruz",
+      "contact": "Contacto de ejemplo 6",
+      "email": "cliente6@example.com",
+      "creditLimit": 27500,
+      "active": true
+    },
+    {
+      "id": "CLI-007",
+      "name": "Farmacia Buen Día",
+      "city": "Cochabamba",
+      "contact": "Contacto de ejemplo 7",
+      "email": "cliente7@example.com",
+      "creditLimit": 30000,
+      "active": true
+    },
+    {
+      "id": "CLI-008",
+      "name": "Centro Médico Jardín",
+      "city": "Sucre",
+      "contact": "Contacto de ejemplo 8",
+      "email": "cliente8@example.com",
+      "creditLimit": 32500,
+      "active": true
+    },
+    {
+      "id": "CLI-009",
+      "name": "Farmacia Alameda",
+      "city": "La Paz",
+      "contact": "Contacto de ejemplo 9",
+      "email": "cliente9@example.com",
+      "creditLimit": 35000,
+      "active": true
+    },
+    {
+      "id": "CLI-010",
+      "name": "Distribuidora Andina",
+      "city": "Santa Cruz",
+      "contact": "Contacto de ejemplo 10",
+      "email": "cliente10@example.com",
+      "creditLimit": 37500,
+      "active": true
+    },
+    {
+      "id": "CLI-011",
+      "name": "Clínica Valle",
+      "city": "Cochabamba",
+      "contact": "Contacto de ejemplo 11",
+      "email": "cliente11@example.com",
+      "creditLimit": 40000,
+      "active": false
+    },
+    {
+      "id": "CLI-012",
+      "name": "Farmacia Nueva Vida",
+      "city": "Sucre",
+      "contact": "Contacto de ejemplo 12",
+      "email": "cliente12@example.com",
+      "creditLimit": 42500,
+      "active": true
+    }
+  ],
+  "inventory": [
+    {
+      "id": "ART-001",
+      "name": "Suplemento A · 30 cápsulas",
+      "category": "Bienestar",
+      "stock": 180,
+      "minimum": 60,
+      "price": 48,
+      "warehouse": "La Paz",
+      "unit": "Unidad"
+    },
+    {
+      "id": "ART-002",
+      "name": "Suplemento B · 60 tabletas",
+      "category": "Bienestar",
+      "stock": 42,
+      "minimum": 50,
+      "price": 72,
+      "warehouse": "Santa Cruz",
+      "unit": "Unidad"
+    },
+    {
+      "id": "ART-003",
+      "name": "Kit de primeros auxilios",
+      "category": "Cuidado",
+      "stock": 96,
+      "minimum": 30,
+      "price": 125,
+      "warehouse": "Cochabamba",
+      "unit": "Unidad"
+    },
+    {
+      "id": "ART-004",
+      "name": "Gel de cuidado · 250 ml",
+      "category": "Cuidado",
+      "stock": 220,
+      "minimum": 80,
+      "price": 35,
+      "warehouse": "Sucre",
+      "unit": "Unidad"
+    },
+    {
+      "id": "ART-005",
+      "name": "Protector solar · 100 ml",
+      "category": "Cuidado",
+      "stock": 28,
+      "minimum": 40,
+      "price": 85,
+      "warehouse": "La Paz",
+      "unit": "Unidad"
+    },
+    {
+      "id": "ART-006",
+      "name": "Termómetro digital",
+      "category": "Equipamiento",
+      "stock": 65,
+      "minimum": 20,
+      "price": 95,
+      "warehouse": "Santa Cruz",
+      "unit": "Unidad"
+    },
+    {
+      "id": "ART-007",
+      "name": "Mascarillas · caja de 50",
+      "category": "Equipamiento",
+      "stock": 320,
+      "minimum": 100,
+      "price": 42,
+      "warehouse": "Cochabamba",
+      "unit": "Unidad"
+    },
+    {
+      "id": "ART-008",
+      "name": "Venda elástica · 10 cm",
+      "category": "Equipamiento",
+      "stock": 144,
+      "minimum": 40,
+      "price": 18,
+      "warehouse": "Sucre",
+      "unit": "Unidad"
+    },
+    {
+      "id": "ART-009",
+      "name": "Bebida nutricional · 400 g",
+      "category": "Nutrición",
+      "stock": 38,
+      "minimum": 45,
+      "price": 110,
+      "warehouse": "La Paz",
+      "unit": "Unidad"
+    },
+    {
+      "id": "ART-010",
+      "name": "Barra nutricional · caja de 12",
+      "category": "Nutrición",
+      "stock": 160,
+      "minimum": 60,
+      "price": 68,
+      "warehouse": "Santa Cruz",
+      "unit": "Unidad"
+    },
+    {
+      "id": "ART-011",
+      "name": "Crema de cuidado · 60 g",
+      "category": "Cuidado",
+      "stock": 115,
+      "minimum": 35,
+      "price": 56,
+      "warehouse": "Cochabamba",
+      "unit": "Unidad"
+    },
+    {
+      "id": "ART-012",
+      "name": "Set de higiene personal",
+      "category": "Bienestar",
+      "stock": 0,
+      "minimum": 25,
+      "price": 64,
+      "warehouse": "Sucre",
+      "unit": "Unidad"
+    }
+  ],
+  "orders": [
+    {
+      "id": "VEN-1001",
+      "customerId": "CLI-001",
+      "customer": "Farmacia Aurora",
+      "city": "La Paz",
+      "date": "2026-05-03",
+      "dueDate": "2026-06-02",
+      "salesperson": "Ana Demo",
+      "items": [
+        {
+          "productId": "ART-001",
+          "name": "Suplemento A · 30 cápsulas",
+          "quantity": 8,
+          "price": 48
+        }
+      ],
+      "total": 384,
+      "paid": 192,
+      "payments": [],
+      "balance": 192,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1002",
+      "customerId": "CLI-002",
+      "customer": "Distribuidora Horizonte",
+      "city": "Santa Cruz",
+      "date": "2026-05-06",
+      "dueDate": "2026-06-05",
+      "salesperson": "Luis Demo",
+      "items": [
+        {
+          "productId": "ART-006",
+          "name": "Termómetro digital",
+          "quantity": 15,
+          "price": 95
+        }
+      ],
+      "total": 1425,
+      "paid": 0,
+      "payments": [],
+      "balance": 1425,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1003",
+      "customerId": "CLI-003",
+      "customer": "Centro Médico Amanecer",
+      "city": "Cochabamba",
+      "date": "2026-05-09",
+      "dueDate": "2026-06-08",
+      "salesperson": "Carla Demo",
+      "items": [
+        {
+          "productId": "ART-011",
+          "name": "Crema de cuidado · 60 g",
+          "quantity": 22,
+          "price": 56
+        }
+      ],
+      "total": 1232,
+      "paid": 1232,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1004",
+      "customerId": "CLI-004",
+      "customer": "Farmacia Los Cedros",
+      "city": "Sucre",
+      "date": "2026-05-12",
+      "dueDate": "2026-06-11",
+      "salesperson": "Marco Demo",
+      "items": [
+        {
+          "productId": "ART-004",
+          "name": "Gel de cuidado · 250 ml",
+          "quantity": 29,
+          "price": 35
+        }
+      ],
+      "total": 1015,
+      "paid": 1015,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1005",
+      "customerId": "CLI-005",
+      "customer": "Clínica Mirador",
+      "city": "La Paz",
+      "date": "2026-05-15",
+      "dueDate": "2026-06-14",
+      "salesperson": "Ana Demo",
+      "items": [
+        {
+          "productId": "ART-009",
+          "name": "Bebida nutricional · 400 g",
+          "quantity": 36,
+          "price": 110
+        }
+      ],
+      "total": 3960,
+      "paid": 1980,
+      "payments": [],
+      "balance": 1980,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1006",
+      "customerId": "CLI-006",
+      "customer": "Distribuidora Sol",
+      "city": "Santa Cruz",
+      "date": "2026-05-18",
+      "dueDate": "2026-06-17",
+      "salesperson": "Luis Demo",
+      "items": [
+        {
+          "productId": "ART-002",
+          "name": "Suplemento B · 60 tabletas",
+          "quantity": 43,
+          "price": 72
+        }
+      ],
+      "total": 3096,
+      "paid": 0,
+      "payments": [],
+      "balance": 3096,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1007",
+      "customerId": "CLI-007",
+      "customer": "Farmacia Buen Día",
+      "city": "Cochabamba",
+      "date": "2026-05-21",
+      "dueDate": "2026-06-20",
+      "salesperson": "Carla Demo",
+      "items": [
+        {
+          "productId": "ART-007",
+          "name": "Mascarillas · caja de 50",
+          "quantity": 50,
+          "price": 42
+        }
+      ],
+      "total": 2100,
+      "paid": 2100,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1008",
+      "customerId": "CLI-008",
+      "customer": "Centro Médico Jardín",
+      "city": "Sucre",
+      "date": "2026-05-24",
+      "dueDate": "2026-06-23",
+      "salesperson": "Marco Demo",
+      "items": [
+        {
+          "productId": "ART-012",
+          "name": "Set de higiene personal",
+          "quantity": 9,
+          "price": 64
+        }
+      ],
+      "total": 576,
+      "paid": 576,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1009",
+      "customerId": "CLI-009",
+      "customer": "Farmacia Alameda",
+      "city": "La Paz",
+      "date": "2026-06-03",
+      "dueDate": "2026-07-03",
+      "salesperson": "Ana Demo",
+      "items": [
+        {
+          "productId": "ART-005",
+          "name": "Protector solar · 100 ml",
+          "quantity": 16,
+          "price": 85
+        }
+      ],
+      "total": 1360,
+      "paid": 680,
+      "payments": [],
+      "balance": 680,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1010",
+      "customerId": "CLI-010",
+      "customer": "Distribuidora Andina",
+      "city": "Santa Cruz",
+      "date": "2026-06-06",
+      "dueDate": "2026-07-06",
+      "salesperson": "Luis Demo",
+      "items": [
+        {
+          "productId": "ART-010",
+          "name": "Barra nutricional · caja de 12",
+          "quantity": 23,
+          "price": 68
+        }
+      ],
+      "total": 1564,
+      "paid": 0,
+      "payments": [],
+      "balance": 1564,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1011",
+      "customerId": "CLI-011",
+      "customer": "Clínica Valle",
+      "city": "Cochabamba",
+      "date": "2026-06-09",
+      "dueDate": "2026-07-09",
+      "salesperson": "Carla Demo",
+      "items": [
+        {
+          "productId": "ART-003",
+          "name": "Kit de primeros auxilios",
+          "quantity": 30,
+          "price": 125
+        }
+      ],
+      "total": 3750,
+      "paid": 3750,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1012",
+      "customerId": "CLI-012",
+      "customer": "Farmacia Nueva Vida",
+      "city": "Sucre",
+      "date": "2026-06-12",
+      "dueDate": "2026-07-12",
+      "salesperson": "Marco Demo",
+      "items": [
+        {
+          "productId": "ART-008",
+          "name": "Venda elástica · 10 cm",
+          "quantity": 37,
+          "price": 18
+        }
+      ],
+      "total": 666,
+      "paid": 666,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1013",
+      "customerId": "CLI-001",
+      "customer": "Farmacia Aurora",
+      "city": "La Paz",
+      "date": "2026-06-15",
+      "dueDate": "2026-07-15",
+      "salesperson": "Ana Demo",
+      "items": [
+        {
+          "productId": "ART-001",
+          "name": "Suplemento A · 30 cápsulas",
+          "quantity": 44,
+          "price": 48
+        }
+      ],
+      "total": 2112,
+      "paid": 1056,
+      "payments": [],
+      "balance": 1056,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1014",
+      "customerId": "CLI-002",
+      "customer": "Distribuidora Horizonte",
+      "city": "Santa Cruz",
+      "date": "2026-06-18",
+      "dueDate": "2026-07-18",
+      "salesperson": "Luis Demo",
+      "items": [
+        {
+          "productId": "ART-006",
+          "name": "Termómetro digital",
+          "quantity": 51,
+          "price": 95
+        }
+      ],
+      "total": 4845,
+      "paid": 0,
+      "payments": [],
+      "balance": 4845,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1015",
+      "customerId": "CLI-003",
+      "customer": "Centro Médico Amanecer",
+      "city": "Cochabamba",
+      "date": "2026-06-21",
+      "dueDate": "2026-07-21",
+      "salesperson": "Carla Demo",
+      "items": [
+        {
+          "productId": "ART-011",
+          "name": "Crema de cuidado · 60 g",
+          "quantity": 10,
+          "price": 56
+        }
+      ],
+      "total": 560,
+      "paid": 560,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1016",
+      "customerId": "CLI-004",
+      "customer": "Farmacia Los Cedros",
+      "city": "Sucre",
+      "date": "2026-06-24",
+      "dueDate": "2026-07-24",
+      "salesperson": "Marco Demo",
+      "items": [
+        {
+          "productId": "ART-004",
+          "name": "Gel de cuidado · 250 ml",
+          "quantity": 17,
+          "price": 35
+        }
+      ],
+      "total": 595,
+      "paid": 595,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1017",
+      "customerId": "CLI-005",
+      "customer": "Clínica Mirador",
+      "city": "La Paz",
+      "date": "2026-07-03",
+      "dueDate": "2026-08-02",
+      "salesperson": "Ana Demo",
+      "items": [
+        {
+          "productId": "ART-009",
+          "name": "Bebida nutricional · 400 g",
+          "quantity": 24,
+          "price": 110
+        }
+      ],
+      "total": 2640,
+      "paid": 1320,
+      "payments": [],
+      "balance": 1320,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1018",
+      "customerId": "CLI-006",
+      "customer": "Distribuidora Sol",
+      "city": "Santa Cruz",
+      "date": "2026-07-06",
+      "dueDate": "2026-08-05",
+      "salesperson": "Luis Demo",
+      "items": [
+        {
+          "productId": "ART-002",
+          "name": "Suplemento B · 60 tabletas",
+          "quantity": 31,
+          "price": 72
+        }
+      ],
+      "total": 2232,
+      "paid": 0,
+      "payments": [],
+      "balance": 2232,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1019",
+      "customerId": "CLI-007",
+      "customer": "Farmacia Buen Día",
+      "city": "Cochabamba",
+      "date": "2026-07-09",
+      "dueDate": "2026-08-08",
+      "salesperson": "Carla Demo",
+      "items": [
+        {
+          "productId": "ART-007",
+          "name": "Mascarillas · caja de 50",
+          "quantity": 38,
+          "price": 42
+        }
+      ],
+      "total": 1596,
+      "paid": 1596,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1020",
+      "customerId": "CLI-008",
+      "customer": "Centro Médico Jardín",
+      "city": "Sucre",
+      "date": "2026-07-12",
+      "dueDate": "2026-08-11",
+      "salesperson": "Marco Demo",
+      "items": [
+        {
+          "productId": "ART-012",
+          "name": "Set de higiene personal",
+          "quantity": 45,
+          "price": 64
+        }
+      ],
+      "total": 2880,
+      "paid": 2880,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1021",
+      "customerId": "CLI-009",
+      "customer": "Farmacia Alameda",
+      "city": "La Paz",
+      "date": "2026-07-15",
+      "dueDate": "2026-08-14",
+      "salesperson": "Ana Demo",
+      "items": [
+        {
+          "productId": "ART-005",
+          "name": "Protector solar · 100 ml",
+          "quantity": 52,
+          "price": 85
+        }
+      ],
+      "total": 4420,
+      "paid": 2210,
+      "payments": [],
+      "balance": 2210,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1022",
+      "customerId": "CLI-010",
+      "customer": "Distribuidora Andina",
+      "city": "Santa Cruz",
+      "date": "2026-07-18",
+      "dueDate": "2026-08-17",
+      "salesperson": "Luis Demo",
+      "items": [
+        {
+          "productId": "ART-010",
+          "name": "Barra nutricional · caja de 12",
+          "quantity": 11,
+          "price": 68
+        }
+      ],
+      "total": 748,
+      "paid": 0,
+      "payments": [],
+      "balance": 748,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1023",
+      "customerId": "CLI-011",
+      "customer": "Clínica Valle",
+      "city": "Cochabamba",
+      "date": "2026-07-21",
+      "dueDate": "2026-08-20",
+      "salesperson": "Carla Demo",
+      "items": [
+        {
+          "productId": "ART-003",
+          "name": "Kit de primeros auxilios",
+          "quantity": 18,
+          "price": 125
+        }
+      ],
+      "total": 2250,
+      "paid": 2250,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1024",
+      "customerId": "CLI-012",
+      "customer": "Farmacia Nueva Vida",
+      "city": "Sucre",
+      "date": "2026-07-24",
+      "dueDate": "2026-08-23",
+      "salesperson": "Marco Demo",
+      "items": [
+        {
+          "productId": "ART-008",
+          "name": "Venda elástica · 10 cm",
+          "quantity": 25,
+          "price": 18
+        }
+      ],
+      "total": 450,
+      "paid": 450,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1025",
+      "customerId": "CLI-001",
+      "customer": "Farmacia Aurora",
+      "city": "La Paz",
+      "date": "2026-08-03",
+      "dueDate": "2026-09-02",
+      "salesperson": "Ana Demo",
+      "items": [
+        {
+          "productId": "ART-001",
+          "name": "Suplemento A · 30 cápsulas",
+          "quantity": 32,
+          "price": 48
+        }
+      ],
+      "total": 1536,
+      "paid": 768,
+      "payments": [],
+      "balance": 768,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1026",
+      "customerId": "CLI-002",
+      "customer": "Distribuidora Horizonte",
+      "city": "Santa Cruz",
+      "date": "2026-08-06",
+      "dueDate": "2026-09-05",
+      "salesperson": "Luis Demo",
+      "items": [
+        {
+          "productId": "ART-006",
+          "name": "Termómetro digital",
+          "quantity": 39,
+          "price": 95
+        }
+      ],
+      "total": 3705,
+      "paid": 0,
+      "payments": [],
+      "balance": 3705,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1027",
+      "customerId": "CLI-003",
+      "customer": "Centro Médico Amanecer",
+      "city": "Cochabamba",
+      "date": "2026-08-09",
+      "dueDate": "2026-09-08",
+      "salesperson": "Carla Demo",
+      "items": [
+        {
+          "productId": "ART-011",
+          "name": "Crema de cuidado · 60 g",
+          "quantity": 46,
+          "price": 56
+        }
+      ],
+      "total": 2576,
+      "paid": 2576,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1028",
+      "customerId": "CLI-004",
+      "customer": "Farmacia Los Cedros",
+      "city": "Sucre",
+      "date": "2026-08-12",
+      "dueDate": "2026-09-11",
+      "salesperson": "Marco Demo",
+      "items": [
+        {
+          "productId": "ART-004",
+          "name": "Gel de cuidado · 250 ml",
+          "quantity": 53,
+          "price": 35
+        }
+      ],
+      "total": 1855,
+      "paid": 1855,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1029",
+      "customerId": "CLI-005",
+      "customer": "Clínica Mirador",
+      "city": "La Paz",
+      "date": "2026-08-15",
+      "dueDate": "2026-09-14",
+      "salesperson": "Ana Demo",
+      "items": [
+        {
+          "productId": "ART-009",
+          "name": "Bebida nutricional · 400 g",
+          "quantity": 12,
+          "price": 110
+        }
+      ],
+      "total": 1320,
+      "paid": 660,
+      "payments": [],
+      "balance": 660,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1030",
+      "customerId": "CLI-006",
+      "customer": "Distribuidora Sol",
+      "city": "Santa Cruz",
+      "date": "2026-08-18",
+      "dueDate": "2026-09-17",
+      "salesperson": "Luis Demo",
+      "items": [
+        {
+          "productId": "ART-002",
+          "name": "Suplemento B · 60 tabletas",
+          "quantity": 19,
+          "price": 72
+        }
+      ],
+      "total": 1368,
+      "paid": 0,
+      "payments": [],
+      "balance": 1368,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1031",
+      "customerId": "CLI-007",
+      "customer": "Farmacia Buen Día",
+      "city": "Cochabamba",
+      "date": "2026-08-21",
+      "dueDate": "2026-09-20",
+      "salesperson": "Carla Demo",
+      "items": [
+        {
+          "productId": "ART-007",
+          "name": "Mascarillas · caja de 50",
+          "quantity": 26,
+          "price": 42
+        }
+      ],
+      "total": 1092,
+      "paid": 1092,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1032",
+      "customerId": "CLI-008",
+      "customer": "Centro Médico Jardín",
+      "city": "Sucre",
+      "date": "2026-08-24",
+      "dueDate": "2026-09-23",
+      "salesperson": "Marco Demo",
+      "items": [
+        {
+          "productId": "ART-012",
+          "name": "Set de higiene personal",
+          "quantity": 33,
+          "price": 64
+        }
+      ],
+      "total": 2112,
+      "paid": 2112,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1033",
+      "customerId": "CLI-009",
+      "customer": "Farmacia Alameda",
+      "city": "La Paz",
+      "date": "2026-09-03",
+      "dueDate": "2026-10-03",
+      "salesperson": "Ana Demo",
+      "items": [
+        {
+          "productId": "ART-005",
+          "name": "Protector solar · 100 ml",
+          "quantity": 40,
+          "price": 85
+        }
+      ],
+      "total": 3400,
+      "paid": 1700,
+      "payments": [],
+      "balance": 1700,
+      "status": "Vencida"
+    },
+    {
+      "id": "VEN-1034",
+      "customerId": "CLI-010",
+      "customer": "Distribuidora Andina",
+      "city": "Santa Cruz",
+      "date": "2026-09-06",
+      "dueDate": "2026-10-06",
+      "salesperson": "Luis Demo",
+      "items": [
+        {
+          "productId": "ART-010",
+          "name": "Barra nutricional · caja de 12",
+          "quantity": 47,
+          "price": 68
+        }
+      ],
+      "total": 3196,
+      "paid": 0,
+      "payments": [],
+      "balance": 3196,
+      "status": "Pendiente"
+    },
+    {
+      "id": "VEN-1035",
+      "customerId": "CLI-011",
+      "customer": "Clínica Valle",
+      "city": "Cochabamba",
+      "date": "2026-09-09",
+      "dueDate": "2026-10-09",
+      "salesperson": "Carla Demo",
+      "items": [
+        {
+          "productId": "ART-003",
+          "name": "Kit de primeros auxilios",
+          "quantity": 54,
+          "price": 125
+        }
+      ],
+      "total": 6750,
+      "paid": 6750,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1036",
+      "customerId": "CLI-012",
+      "customer": "Farmacia Nueva Vida",
+      "city": "Sucre",
+      "date": "2026-09-12",
+      "dueDate": "2026-10-12",
+      "salesperson": "Marco Demo",
+      "items": [
+        {
+          "productId": "ART-008",
+          "name": "Venda elástica · 10 cm",
+          "quantity": 13,
+          "price": 18
+        }
+      ],
+      "total": 234,
+      "paid": 234,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1037",
+      "customerId": "CLI-001",
+      "customer": "Farmacia Aurora",
+      "city": "La Paz",
+      "date": "2026-09-15",
+      "dueDate": "2026-10-15",
+      "salesperson": "Ana Demo",
+      "items": [
+        {
+          "productId": "ART-001",
+          "name": "Suplemento A · 30 cápsulas",
+          "quantity": 20,
+          "price": 48
+        }
+      ],
+      "total": 960,
+      "paid": 480,
+      "payments": [],
+      "balance": 480,
+      "status": "Pendiente"
+    },
+    {
+      "id": "VEN-1038",
+      "customerId": "CLI-002",
+      "customer": "Distribuidora Horizonte",
+      "city": "Santa Cruz",
+      "date": "2026-09-18",
+      "dueDate": "2026-10-18",
+      "salesperson": "Luis Demo",
+      "items": [
+        {
+          "productId": "ART-006",
+          "name": "Termómetro digital",
+          "quantity": 27,
+          "price": 95
+        }
+      ],
+      "total": 2565,
+      "paid": 0,
+      "payments": [],
+      "balance": 2565,
+      "status": "Pendiente"
+    },
+    {
+      "id": "VEN-1039",
+      "customerId": "CLI-003",
+      "customer": "Centro Médico Amanecer",
+      "city": "Cochabamba",
+      "date": "2026-09-21",
+      "dueDate": "2026-10-21",
+      "salesperson": "Carla Demo",
+      "items": [
+        {
+          "productId": "ART-011",
+          "name": "Crema de cuidado · 60 g",
+          "quantity": 34,
+          "price": 56
+        }
+      ],
+      "total": 1904,
+      "paid": 1904,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1040",
+      "customerId": "CLI-004",
+      "customer": "Farmacia Los Cedros",
+      "city": "Sucre",
+      "date": "2026-09-24",
+      "dueDate": "2026-10-24",
+      "salesperson": "Marco Demo",
+      "items": [
+        {
+          "productId": "ART-004",
+          "name": "Gel de cuidado · 250 ml",
+          "quantity": 41,
+          "price": 35
+        }
+      ],
+      "total": 1435,
+      "paid": 1435,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1041",
+      "customerId": "CLI-005",
+      "customer": "Clínica Mirador",
+      "city": "La Paz",
+      "date": "2026-10-05",
+      "dueDate": "2026-11-04",
+      "salesperson": "Ana Demo",
+      "items": [
+        {
+          "productId": "ART-009",
+          "name": "Bebida nutricional · 400 g",
+          "quantity": 48,
+          "price": 110
+        }
+      ],
+      "total": 5280,
+      "paid": 2640,
+      "payments": [],
+      "balance": 2640,
+      "status": "Pendiente"
+    },
+    {
+      "id": "VEN-1042",
+      "customerId": "CLI-006",
+      "customer": "Distribuidora Sol",
+      "city": "Santa Cruz",
+      "date": "2026-10-06",
+      "dueDate": "2026-11-05",
+      "salesperson": "Luis Demo",
+      "items": [
+        {
+          "productId": "ART-002",
+          "name": "Suplemento B · 60 tabletas",
+          "quantity": 55,
+          "price": 72
+        }
+      ],
+      "total": 3960,
+      "paid": 0,
+      "payments": [],
+      "balance": 3960,
+      "status": "Pendiente"
+    },
+    {
+      "id": "VEN-1043",
+      "customerId": "CLI-007",
+      "customer": "Farmacia Buen Día",
+      "city": "Cochabamba",
+      "date": "2026-10-01",
+      "dueDate": "2026-10-31",
+      "salesperson": "Carla Demo",
+      "items": [
+        {
+          "productId": "ART-007",
+          "name": "Mascarillas · caja de 50",
+          "quantity": 14,
+          "price": 42
+        }
+      ],
+      "total": 588,
+      "paid": 588,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1044",
+      "customerId": "CLI-008",
+      "customer": "Centro Médico Jardín",
+      "city": "Sucre",
+      "date": "2026-10-02",
+      "dueDate": "2026-11-01",
+      "salesperson": "Marco Demo",
+      "items": [
+        {
+          "productId": "ART-012",
+          "name": "Set de higiene personal",
+          "quantity": 21,
+          "price": 64
+        }
+      ],
+      "total": 1344,
+      "paid": 1344,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1045",
+      "customerId": "CLI-009",
+      "customer": "Farmacia Alameda",
+      "city": "La Paz",
+      "date": "2026-10-03",
+      "dueDate": "2026-11-02",
+      "salesperson": "Ana Demo",
+      "items": [
+        {
+          "productId": "ART-005",
+          "name": "Protector solar · 100 ml",
+          "quantity": 28,
+          "price": 85
+        }
+      ],
+      "total": 2380,
+      "paid": 1190,
+      "payments": [],
+      "balance": 1190,
+      "status": "Pendiente"
+    },
+    {
+      "id": "VEN-1046",
+      "customerId": "CLI-010",
+      "customer": "Distribuidora Andina",
+      "city": "Santa Cruz",
+      "date": "2026-10-04",
+      "dueDate": "2026-11-03",
+      "salesperson": "Luis Demo",
+      "items": [
+        {
+          "productId": "ART-010",
+          "name": "Barra nutricional · caja de 12",
+          "quantity": 35,
+          "price": 68
+        }
+      ],
+      "total": 2380,
+      "paid": 0,
+      "payments": [],
+      "balance": 2380,
+      "status": "Pendiente"
+    },
+    {
+      "id": "VEN-1047",
+      "customerId": "CLI-011",
+      "customer": "Clínica Valle",
+      "city": "Cochabamba",
+      "date": "2026-10-05",
+      "dueDate": "2026-11-04",
+      "salesperson": "Carla Demo",
+      "items": [
+        {
+          "productId": "ART-003",
+          "name": "Kit de primeros auxilios",
+          "quantity": 42,
+          "price": 125
+        }
+      ],
+      "total": 5250,
+      "paid": 5250,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    },
+    {
+      "id": "VEN-1048",
+      "customerId": "CLI-012",
+      "customer": "Farmacia Nueva Vida",
+      "city": "Sucre",
+      "date": "2026-10-06",
+      "dueDate": "2026-11-05",
+      "salesperson": "Marco Demo",
+      "items": [
+        {
+          "productId": "ART-008",
+          "name": "Venda elástica · 10 cm",
+          "quantity": 49,
+          "price": 18
+        }
+      ],
+      "total": 882,
+      "paid": 882,
+      "payments": [],
+      "balance": 0,
+      "status": "Pagada"
+    }
+  ],
+  "trend": [
+    {
+      "label": "May",
+      "sales": 13788,
+      "collected": 7095
+    },
+    {
+      "label": "Jun",
+      "sales": 15452,
+      "collected": 7307
+    },
+    {
+      "label": "Jul",
+      "sales": 17216,
+      "collected": 10706
+    },
+    {
+      "label": "Ago",
+      "sales": 15564,
+      "collected": 9063
+    },
+    {
+      "label": "Sep",
+      "sales": 20444,
+      "collected": 12503
+    },
+    {
+      "label": "Oct",
+      "sales": 22064,
+      "collected": 11894
+    }
+  ],
+  "branches": [
+    {
+      "city": "La Paz",
+      "sales": 29752
+    },
+    {
+      "city": "Santa Cruz",
+      "sales": 31084
+    },
+    {
+      "city": "Cochabamba",
+      "sales": 29648
+    },
+    {
+      "city": "Sucre",
+      "sales": 14044
+    }
+  ],
+  "summary": {
+    "sales": 104528,
+    "collected": 58568,
+    "outstanding": 45960,
+    "overdue": 29549,
+    "orderCount": 48,
+    "activeCustomers": 11,
+    "inventoryValue": 77451,
+    "lowStock": 4
+  }
+}

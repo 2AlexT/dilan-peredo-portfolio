@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import type { PortfolioProject } from "../types/project";
 
 interface ProjectVisualProps {
@@ -6,6 +8,28 @@ interface ProjectVisualProps {
 }
 
 export function ProjectVisual({ project, large = false }: ProjectVisualProps) {
+  if (project.coverImage) {
+    return (
+      <figure className="relative aspect-[16/10] overflow-hidden border border-line bg-[#f6f7fb]">
+        <Image
+          src={project.coverImage.src}
+          alt={project.coverImage.alt}
+          fill
+          sizes={large ? "(max-width: 1440px) 94vw, 1344px" : "(max-width: 768px) 94vw, (max-width: 1024px) 46vw, 31vw"}
+          priority={large}
+          className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02] motion-reduce:transition-none"
+        />
+        <figcaption className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-3 border-t border-line bg-background/95 px-3 py-2 font-mono text-[0.5rem] uppercase tracking-[0.1em] text-foreground/80 sm:px-4 sm:text-[0.6rem]">
+          <span>{project.name}</span>
+          <span className="inline-flex items-center gap-2 text-accent">
+            <span aria-hidden="true" className="size-1 rounded-full bg-accent" />
+            {project.coverImage.caption}
+          </span>
+        </figcaption>
+      </figure>
+    );
+  }
+
   const isSap = project.slug === "sap-operations-platform";
   const isProcurement = project.slug === "comprasya";
 

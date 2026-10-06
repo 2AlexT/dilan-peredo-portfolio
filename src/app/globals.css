@@ -79,6 +79,7 @@ button {
 }
 
 .route-transition-layer {
+  visibility: hidden;
   position: fixed;
   inset: 0;
   z-index: 90;
@@ -112,11 +113,13 @@ button {
 }
 
 [data-route-transition="cover"] .route-transition-layer {
+  visibility: visible;
   pointer-events: auto;
   transform: translate3d(0, 0, 0);
 }
 
 [data-route-transition="reveal"] .route-transition-layer {
+  visibility: visible;
   transform: translate3d(0, -100%, 0);
 }
 
