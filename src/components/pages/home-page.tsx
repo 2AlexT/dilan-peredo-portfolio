@@ -17,7 +17,7 @@ export function HomePageContent({ locale }: HomePageContentProps) {
 
   return (
     <main id="main-content" lang={locale}>
-      <section className="relative isolate overflow-hidden pb-20 pt-16 sm:pb-28 sm:pt-24 lg:min-h-[calc(100svh-4.5rem)] lg:py-28">
+      <section className="relative isolate overflow-hidden pb-20 pt-8 sm:pb-28 sm:pt-12 lg:min-h-[calc(100svh-4.5rem)] lg:pb-28 lg:pt-14">
         <div className="technical-grid pointer-events-none absolute inset-0 -z-10" />
         <div className="pointer-events-none absolute -right-40 top-20 -z-10 size-[34rem] rounded-full bg-accent/[0.035] blur-3xl" />
 
